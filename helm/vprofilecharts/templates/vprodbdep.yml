@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: vprodb
-        image: vprocontainers/vprofiledb 
+        image: vprofile/vprofiledb 
        
         resources:
         ports:
