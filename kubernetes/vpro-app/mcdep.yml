@@ -5,10 +5,10 @@ metadata:
   labels:
     app: vpromc
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: vpromc
-  replicas: 1
   template:
     metadata:
       labels:
@@ -17,6 +17,7 @@ spec:
       containers:
       - name: vpromc
         image: memcached
+        resources:
         ports:
-        - name: vpromc-port
-          containerPort: 11211
+          - name: vpromc-port
+            containerPort: 11211
